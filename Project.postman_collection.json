@@ -73,7 +73,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Abir Hosen\",\n    \"email\": \"abir71.hosen@gmail.com\",\n    \"plan_id\": \"2\",\n    \"active_phone_number\": \"2\"\n}",
+					"raw": "{\n    \"name\": \"Sayem Chowdhury\",\n    \"email\": \"sayemchowdhury23@gmail.com\",\n    \"plan_id\": \"2\",\n    \"active_phone_number\": \"2\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
