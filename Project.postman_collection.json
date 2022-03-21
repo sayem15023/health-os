@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "89712ca4-7f5f-4dd8-8cd1-16485ff9b263",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customer_registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Abir Hosen\",\n    \"email\": \"abir71.hosen@gmail.com\",\n    \"plan_id\": \"1\",\n    \"active_phone_number\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/customer_registration/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"customer_registration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdwaw_money",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"plan_id\" : \"1\",\n    \"customer_id\" : 1,\n    \"month\" : \"january\",\n    \"year\" : \"2020\",\n    \"phone_id\" : 1,\n    \"withdraw\" : true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/withdwaw_money/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"withdwaw_money",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_user_plan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Abir Hosen\",\n    \"email\": \"abir71.hosen@gmail.com\",\n    \"plan_id\": \"2\",\n    \"active_phone_number\": \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/update_user_plan/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"update_user_plan",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "1f273b0e-83f0-4af9-b2a0-a7cf7d67a893",
+		"name": "Prerequisite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save_company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"new company\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/save_company/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"save_company",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save_plan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"new plan 2\",\n    \"size\" : 34,\n    \"price\" : 567\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/save_plan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"save_plan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save_phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\" : \"+8801323987405\",\n    \"company_id\" : 1,\n    \"customer_id\" : 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/save_phone/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"save_phone",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save_payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"plan_id\" : \"1\",\n    \"customer_id\" : 1,\n    \"month\" : \"january\",\n    \"year\" : \"2020\",\n    \"phone_id\" : 1,\n    \"withdraw\" : false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/app/save_payment/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"app",
+						"save_payment",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
